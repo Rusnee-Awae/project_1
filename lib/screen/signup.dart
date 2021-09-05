@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_minipro/utility/my_style.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class SignUp extends StatefulWidget {
   @override
@@ -171,4 +173,7 @@ class _SignUpState extends State<SignUp> {
       ],
     );
   }
+
+
+
 }

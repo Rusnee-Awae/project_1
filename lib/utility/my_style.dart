@@ -1,3 +1,6 @@
+import 'dart:io';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 class MyStyle {
@@ -21,6 +24,17 @@ class MyStyle {
       child: Image.asset('images/my.png'),
     );
   }
+  Widget show() {
+    return Image.asset('images/jan.png');
+  }
+  Widget titleH1(String string) =>
+      Text(string,
+        style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Colors.pink,
+        ),
+      );
 
   MyStyle();
 

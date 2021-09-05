@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_minipro/utility/my_style.dart';
-import 'package:flutter_minipro/screen/menu.dart';
+import 'package:flutter_minipro/screen/signin.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 class SignIn extends StatefulWidget {
@@ -57,39 +57,39 @@ class _SignInState extends State<SignIn> {
       ));
 
   Widget userForm() => Container(
-        width: 250.0,
-        child: TextField(
-          decoration: InputDecoration(
-            prefixIcon: Icon(
-              Icons.account_box,
-              color: MyStyle().dartColor,
-            ),
-            labelStyle: TextStyle(color: MyStyle().dartColor),
-            labelText: 'username',
-            enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: MyStyle().dartColor)),
-            focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: MyStyle().primaryColor)),
-          ),
+    width: 250.0,
+    child: TextField(
+      decoration: InputDecoration(
+        prefixIcon: Icon(
+          Icons.account_box,
+          color: MyStyle().dartColor,
         ),
-      );
+        labelStyle: TextStyle(color: MyStyle().dartColor),
+        labelText: 'username',
+        enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: MyStyle().dartColor)),
+        focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: MyStyle().primaryColor)),
+      ),
+    ),
+  );
 
   Widget passwordForm() => Container(
-        width: 250.0,
-        child: TextField(
-          obscureText: true,
-          decoration: InputDecoration(
-            prefixIcon: Icon(
-              Icons.lock,
-              color: MyStyle().dartColor,
-            ),
-            labelStyle: TextStyle(color: MyStyle().dartColor),
-            labelText: 'password',
-            enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: MyStyle().dartColor)),
-            focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: MyStyle().primaryColor)),
-          ),
+    width: 250.0,
+    child: TextField(
+      obscureText: true,
+      decoration: InputDecoration(
+        prefixIcon: Icon(
+          Icons.lock,
+          color: MyStyle().dartColor,
         ),
-      );
+        labelStyle: TextStyle(color: MyStyle().dartColor),
+        labelText: 'password',
+        enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: MyStyle().dartColor)),
+        focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: MyStyle().primaryColor)),
+      ),
+    ),
+  );
 }
